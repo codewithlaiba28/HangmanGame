@@ -173,7 +173,7 @@ const initGame = (button, clickedLetter) => {
 for (let i = 97; i <= 122; i++) { 
     const button = document.createElement("button");
     button.innerHTML = String.fromCharCode(i); 
-    button.classList.add("px-3", "py-2", "bg-gray-300", "rounded", "hover:bg-gray-400");
+    button.classList.add("px-3", "py-2", "hover:bg-gray-500", "rounded", "bg-gray-400");
     keyboard_div.appendChild(button);
     button.addEventListener("click", e => initGame(e.target, String.fromCharCode(i)));
 }
