@@ -140,7 +140,7 @@ const gameOver = (isVictory) => {
         game_model.classList.remove("hidden");
         game_model.querySelector("h4").innerText = isVictory ? "You Win!" : "Game Over";
         game_model.querySelector("p b").innerText = currentword;
-        game_model.querySelector("img").src = isVictory ? "winer.gif" : "lostgif.gif";
+        game_model.querySelector("img").src = isVictory ? "images/winer.gif" : "images/lostgif.gif";
     }, 500);
 };
 // Function to initialize game logic for letter clicks
